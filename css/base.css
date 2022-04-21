@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: aliceblue;
+    color: purple;
+}
+
+header,footer,main {
+    max-width: 36rem; /*16px * 36 = 576px*/
+    margin: 0 auto;/* Center from left to right*/
+    padding: 2rem;
+    border: 5px solid red;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#profile-pic {
+    width: 200px;
+    height: auto;
+}
