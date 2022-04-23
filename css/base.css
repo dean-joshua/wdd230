@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/images/minimalist-purple-sky-and-mountain.jpg");
+    background-image: url("../images/minimalist-purple-sky-and-mountain.jpg");
     background-color: #cccccc;
     min-height: 100%;
     background-position: center;
