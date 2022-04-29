@@ -1,3 +1,4 @@
-.large-grid{
-    grid-template-columns: 1fr 1fr 1fr;
+.main-grid{
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-evenly;
 }
