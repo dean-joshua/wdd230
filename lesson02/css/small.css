@@ -13,6 +13,8 @@
     background-color: antiquewhite;
     border-radius: 10px;
     padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
 
@@ -80,8 +82,13 @@
     margin-bottom: -5px;
 }
 
+#footer-copy-line{
+    font-size: large;
+}
 
-
+#modifiedLine{
+    font-size: small;
+}
 
 header,
 footer,
@@ -90,7 +97,7 @@ main {
     /*16px * 36 = 576px*/
     margin: 0 auto;
     /* Center from left to right*/
-    padding: 2rem;
+    padding: .5rem;
     font-family: 'Exo 2', sans-serif;
 }
 
