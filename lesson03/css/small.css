@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer,
+main {
+    max-width: 100%;
+    /*16px * 36 = 576px*/
+    margin: 0 auto;
+    /* Center from left to right*/
+    padding: .5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+header h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+header,footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+.flex-nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-nav a{
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.flex-nav a:hover{
+    background-color: yellow;
+    color: black;
+}
