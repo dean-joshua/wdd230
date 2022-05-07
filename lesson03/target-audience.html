@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Joshua Dean">
+    <meta name="description" content="Lesson 03 page for our WDD 230 Class. We examine our target audience here.">
+    <title>WDD 230 - Lesson 03 Audience- Joshua Dean</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 576px)">
+    <!-- <link rel="stylesheet" href="css/large.css" media="(min-width: 1010px)">  -->
 </head>
 <body>
-    
+    <header>
+        <h1>Site Plan</h1>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Audience</a></li>
+                <li><a href="color-scheme.html">Colors</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-main">
+        <section>
+            <h2>Target Audience:</h2>
+            <ul id="targ-aud-list">
+                <li><h4>Who:</h4> Local business owners trying to improve the quality of life of those in their community and promote a healthy economy</li>
+                <li><h4>Age:</h4> 16-100</li>
+                <li><h4>Income:</h4> Income levels will very between business owners. Typically above 40,000 a year.</li>
+                <li><h4>Motivation:</h4> Desire to promote healthy economic growth, partner with others, create job opportunities, and create good public relations.</li>
+            </ul>
+        </section>
+        <section id="persona-section">
+            <h2>Personas:</h2>
+            <article id="persona-1">
+                <h3>Deshawn Johnson</h3>
+                <div class="persona-img-container">
+                    <img src="images/generated-photo-deshawn.jpg" alt="A photo genereated using generated.photos ai." width="300" height="300">
+                </div>
+                <ul class="personas-list">
+                    <li><h4>Occupation:</h4> Owner of a start up Tech Company</li>
+                    <li><h4>Demographic and Education:</h4> 25 years old. Currently engaged. Recently acquired all the funding needed to start his dream company.
+                    </li>
+                    <li><h4>Goals and Motivation:</h4> looking for opportunities to connect with other business owners to form partnerships to offer
+                        his tech services. Hoping that working with a group of other businesses in a public domain will boost his credibility and business.</li>
+                    <li><h4>Technology:</h4> Advanced technical knowledge. Browses websites from varying devices. Expects convenience and ease of use in the website.</li>
+                    <li><h4>Quote:</h4> "I'm a young business owner living his dream. I want to make connections and provide 
+                        opportunities for those who come after me." </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Melinda CartWright</h3>
+                <div class="persona-img-container">
+                    <img src="images/generated-photo-melinda.jpg" alt="A photo generated unsing generated.photos ai." width="300" height="300">
+                </div>
+                <ul class="personas-list">
+                    <li><h4>Occupation:</h4> Owner of Local Restaurant</li>
+                    <li><h4>Demographic and Education:</h4> 45 years old. A wife and mother of 5. Started a restaurant out of college. Masters Degree in Business.</li>
+                    <li><h4>Goals and Motivation:</h4> Wants to connect with other local busienss owners and form partnerships to provide assistance to the communities around her restaurant.</li>
+                    <li><h4>Technology:</h4> Basic technical knowledge. Navigates websites regularly via mobile device and tablet.</li>
+                    <li><h4>Quote:</h4> "I love my community and want to do all I can to help them."</li>
+                </ul>
+            </article>
+
+        </section>
+        <section class="scenarios-list">
+            <h2>Scenarios:</h2>
+            <ol >
+                <li>What is a Chamber of Commerce?</li>
+                <li>How can I connect with other Business owners?</li>
+                <li>What times does the Chamber of Commerce meet?</li>
+                <li>What kind of community projects do they engage in?</li>
+                <li>How can I join the Chamber of Commerce?</li>
+            </ol>
+
+        </section>
+
+    </main>
+    <footer>
+        <p id="footer-copy-line">&copy; <span id="copyDate"></span> .:|:. Joshua A. Dean .:|:. Idaho</p>
+        <p id="modifiedLine">Last modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
