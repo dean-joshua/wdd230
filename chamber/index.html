@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD230-Chamber Project-Home</title>
+    <meta name="author" content="Joshua Dean">
+    <meta name="description" content="Home page for the WDD230 Chamber Project.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css" media="(min-width: 720px)">
-    <link rel="stylesheet" href="css/large.css" media="(min-width: 800px)">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 580px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 900px)">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <section id="header-top">
             <div class="header-row">
                 <picture>
-                    <img src="https://picsum.photos/150/150" alt="">
+                    <img src="images/bcommerce-logo.png" alt="bcommerce-logo" width="150" height="150">
                 </picture>
                 <section class="headings">
                     <h1>Bahamas</h1>
@@ -28,14 +30,6 @@
                 </section>
             </div>
             <div class="nav-social">
-                <div class="social">
-                    <picture>
-                        <img src="https://picsum.photos/50/50" alt="">
-                    </picture>
-                    <picture>
-                        <img src="https://picsum.photos/50/50" alt="">
-                    </picture>
-                </div>
                 <nav>
                     <ul class="navigation">
                         <li><a class="ham" href="#"></a></li>
@@ -49,8 +43,7 @@
 
         </section>
         <section id="header-bot">
-            <p>Here is where the date will go!</p>
-
+            <p class="date">Here is where the date will go!</p>
         </section>
     </header>
     <main class="main-grid">
@@ -62,7 +55,7 @@
         </article>
 
 
-        <section class="spotlight-grid">
+        <section class="spotlight-flex">
             <article>
                 Spotlight 1
             </article>
@@ -87,6 +80,24 @@
 
     </main>
     <footer>
+        <picture>
+            <img src="images/bcommerce-logo.png" alt="">
+        </picture>
+        <h3>Bahamas Chamber of Commerce</h3>
+        <p>Old Fort Bay</p>
+        <p>New Providence, Bahamas</p>
+        <br>
+        <p>info@bcommerce.org</p>
+        <br>
+        <p>(242)808-9009</p>
+        <br>
+        <p>📍 Location Map</p>
+        <br>
+        <hr>
+        <p id="footer-copy-line">&copy; <span id="copyDate"></span> Bahamas Chamber</p>
+        <p>Joshua Dean</p>
+        <p>WDD 230 Project</p>
+        <p id="modifiedLine">Last modified: <span id="lastmod"></span></p>
 
     </footer>
     <script src="js/script.js"></script>
