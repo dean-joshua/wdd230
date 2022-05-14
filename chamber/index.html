@@ -10,7 +10,7 @@
     <meta name="description" content="Home page for the WDD230 Chamber Project.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Niconne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="(min-width: 580px)">
@@ -80,25 +80,51 @@
 
     </main>
     <footer>
-        <picture>
-            <img src="images/bcommerce-logo.png" alt="">
-        </picture>
-        <h3>Bahamas Chamber of Commerce</h3>
-        <p>Old Fort Bay</p>
-        <p>New Providence, Bahamas</p>
+        <section class="foot-top">
+            <div class="foot-logo">
+                <picture>
+                    <img src="images/bcommerce-logo.png" alt="">
+                </picture>
+                <div class="foot-address">
+                    <h3>Bahamas Chamber of Commerce</h3>
+                    <p>Old Fort Bay</p>
+                    <p>New Providence, Bahamas</p>
+                </div>
+            </div>
+            <br>
+            <div class="foot-contact">
+                <p>info@bcommerce.org</p>
+                <br>
+                <p>(242)808-9009</p>
+                <br>
+                <p>📍 Location Map</p>
+            </div>
+            <br>
+            <div class="foot-social">
+                <br>
+                <picture>
+                    <a href="https://facebook.com"><img src="images/fb-icon.png" alt="facebook logo"></a>
+                </picture>
+                <picture>
+                    <a href="https://linkedin.com"><img src="images/linkedin-icon.png" alt=""></a>
+                </picture>
+            </div>
+        </section>
         <br>
-        <p>info@bcommerce.org</p>
-        <br>
-        <p>(242)808-9009</p>
-        <br>
-        <p>📍 Location Map</p>
-        <br>
+        <p></p>
         <hr>
-        <p id="footer-copy-line">&copy; <span id="copyDate"></span> Bahamas Chamber</p>
-        <p>Joshua Dean</p>
-        <p>WDD 230 Project</p>
-        <p id="modifiedLine">Last modified: <span id="lastmod"></span></p>
+        <div class="copy-mod">
+            <div class="copyright">
+                <p id="footer-copy-line">&copy; <span id="copyDate"></span> Bahamas Chamber</p>
+                <p> | </p>
+                <p>Joshua Dean</p>
+                <p> | </p>
+                <p>WDD 230 Project</p>
+                <p> | </p>
 
+            </div>
+            <p id="modifiedLine">Last modified: <span id="lastmod"></span></p>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>

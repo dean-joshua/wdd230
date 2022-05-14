@@ -59,6 +59,7 @@ header {
     text-align: center;
     margin-top: 10px;
     color: black;
+    font-weight: bolder;
 }
 
 .header-row,
@@ -98,6 +99,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: .5rem;
+    font-family: 'Niconne', cursive;
 }
 
 .headings h1 {
@@ -194,4 +196,12 @@ nav {
 
 .responsive a.ham::before {
     content: "❌ ";
+}
+
+.copyright p:nth-child(2n) {
+    display: none;
+}
+
+.foot-logo{
+    font-family: 'Niconne', cursive;
 }
