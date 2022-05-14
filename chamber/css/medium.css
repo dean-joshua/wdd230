@@ -50,23 +50,7 @@ main article:nth-child(1) {
     grid-column: 1/3;
 }
 
-.navigation {
-    display: flex;
-}
 
-.navigation li {
-    display: block;
-    /* change state in small view */
-    flex: 1 1 auto;
-}
-
-.navigation a {
-    text-align: center;
-}
-
-.navigation li:first-child {
-    display: none;
-}
 
 .social {
     order: 1;
