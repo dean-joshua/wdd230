@@ -201,3 +201,7 @@ nav {
 .foot-logo{
     font-family: 'Niconne', cursive;
 }
+
+.message{
+    display: none;
+}
