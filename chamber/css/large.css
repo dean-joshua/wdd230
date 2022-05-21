@@ -41,17 +41,18 @@ body {
     grid-column: 3/4;
     margin: 0 auto;
 
-
 }
 
 main article {
     margin: 0 auto;
-    min-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 
 .spotlight-flex article:nth-child(3) {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .spotlight-flex article {
@@ -83,7 +84,12 @@ main article:nth-child(2) {
 main article:nth-child(1) {
     grid-row: 1/3;
     grid-column: 2/3;
-    height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.hero-article{
+    min-width: 800px;
 }
 
 .copy-mod {
@@ -112,4 +118,14 @@ footer p {
 
 .m {
     font-size: 1.5rem;
+}
+
+.welcome-banner picture{
+    width: 100%;
+    height: auto;
+}
+
+.welcome-banner picture img{
+    width: 100%;
+    height: auto;
 }

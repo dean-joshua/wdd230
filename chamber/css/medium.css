@@ -4,6 +4,8 @@ body {
     grid-template-rows: 1fr;
 }
 
+
+
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 300px;
