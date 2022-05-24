@@ -1,0 +1,166 @@
+/* Full page styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Page body styling */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+}
+
+/* Resonsive Navigation menu styling */
+nav {
+    margin: 0 auto;
+    width: 100%;
+    align-content: end;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: gold;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+    content: "☰ ";
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: aquamarine;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsive a.ham::before {
+    content: "❌ ";
+}
+
+/* Main, Header, Footer page styling */
+header,
+footer,
+main {
+    max-width: 100%;
+    /*16px * 36 = 576px*/
+    margin: 0 auto;
+    /* Center from left to right*/
+    padding: .5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+header,
+footer{
+    width: 100%;
+    background-color: black;
+    color: gold;
+}
+
+footer {
+    /* position: relative;  */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: gold;
+}
+
+/* Header flexboxes */
+.message{
+    display: none;
+}
+
+.full-header-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-name-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-name-top-bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Niconne', cursive;
+}
+
+.header-name-top-bot h1{
+    font-size: 1em;
+}
+
+.header-name-top-bot p{
+    font-size: .5em;
+}
+
+.nav-box{
+    margin-right: 1em;
+}
+
+.header-bottom{
+    align-self: center;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    border-radius: .3em;
+    background-color: aquamarine;
+    font-weight: 800;
+    color: black;
+    padding: .5em;
+}
+
+/* Footer div and flexboxes */
+.copyright p:nth-child(2n) {
+    display: none;
+}
+
+.foot-logo{
+    font-family: 'Niconne', cursive;
+}
+
+/* Image styling */
+.logo-pic-container{
+    width: 5em;
+    height: auto;
+}
+
+.logo-pic-container img{
+    width: 100%;
+    height: auto;
+}
