@@ -1,3 +1,4 @@
+/* Navigation list styling */
 .navigation {
     display: flex;
 }
@@ -18,4 +19,58 @@
 
 .nav-social {
     margin: auto;
+}
+
+/* Main Grid Styling-Large */
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "event   hero spotlight"
+                         "weather hero spotlight"
+                         "join    news spotlight";
+    gap: 1rem;
+}
+
+.hero-box{
+    grid-area: hero;
+}
+
+.event-box{
+    grid-area: event;
+}
+
+.weather-box{
+    grid-area: weather;
+}
+
+.join-box{
+    display: block;
+    grid-area: join;
+}
+
+.news-box{
+    grid-area: news;
+}
+
+.spotlight-box{
+    display: flex;
+    flex-direction: column;
+    grid-area: spotlight;
+    gap: .5em;
+}
+
+.spotlight-1,
+.spotlight-2{
+    min-height:30%;
+    min-width: 90%;
+}
+
+.spotlight-3{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+    display: block;
+    border: 1px black solid;
+    min-height:30%;
+    min-width: 90%;
 }

@@ -164,3 +164,54 @@ footer {
     width: 100%;
     height: auto;
 }
+
+/* Main grid styling */
+.main-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+}
+
+.hero-box,
+.weather-box,
+.news-box,
+.event-box,
+.join-box{
+    border: 1px black solid;
+    min-height: 10em;
+}
+
+.join-box{
+    display: none;
+}
+
+.event-box{
+    grid-row: 2/3;
+}
+
+.weather-box{
+    grid-row: 3/4;
+}
+
+.spotlight-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    min-height: 20em;
+}
+
+.spotlight-1,
+.spotlight-2{
+    margin: 0 auto;
+    display: block;
+    border: 1px black solid;
+    min-width: 90%;
+    min-height: 40%;
+}
+
+.spotlight-3{
+    display:none;
+}

@@ -1,0 +1,46 @@
+/* Main grid Styling-Medium */
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "hero      hero      hero"
+                         "news      news      news"
+                         "spotlight spotlight spotlight"
+                         "join      join      join"
+                         "event     event     weather";
+    
+    gap: 1rem;
+}
+
+.hero-box{
+    grid-area: hero;
+}
+
+.news-box{
+    grid-area: news;
+}
+
+.join-box{
+    display: grid;
+    grid-area: join;
+}
+
+.event-box{
+    grid-area: event;
+}
+
+.weather-box{
+    grid-area: weather;
+}
+
+.spotlight-box{
+    grid-area: spotlight;
+    display: flex;
+    flex-direction: row;
+    min-height: 10em;
+}
+
+.spotlight-1,
+.spotlight-2{
+    min-width: 40%;
+    min-height: 90%;
+}
