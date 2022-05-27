@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-rows:auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Resonsive Navigation menu styling */
@@ -73,7 +73,7 @@ main {
 }
 
 header,
-footer{
+footer {
     width: 100%;
     background-color: black;
     color: gold;
@@ -90,30 +90,30 @@ footer {
 }
 
 /* Header flexboxes */
-.message{
+.message {
     display: none;
 }
 
-.full-header-flex{
+.full-header-flex {
     display: flex;
     flex-direction: column;
 }
 
-.header-top-flex{
+.header-top-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-logo-name-flex{
+.header-logo-name-flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.header-name-top-bot{
+.header-name-top-bot {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,19 +121,20 @@ footer {
     font-family: 'Niconne', cursive;
 }
 
-.header-name-top-bot h1{
-    font-size: 1em;
+.header-name-top-bot h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
 }
 
-.header-name-top-bot p{
-    font-size: .5em;
+.header-name-top-bot p {
+    font-size: .8em;
 }
 
-.nav-box{
+.nav-box {
     margin-right: 1em;
 }
 
-.header-bottom{
+.header-bottom {
     align-self: center;
     width: 90%;
     text-align: center;
@@ -150,23 +151,34 @@ footer {
     display: none;
 }
 
-.foot-logo{
+.foot-logo {
     font-family: 'Niconne', cursive;
 }
 
 /* Image styling */
-.logo-pic-container{
+.logo-pic-container {
     width: 5em;
     height: auto;
 }
 
-.logo-pic-container img{
+.logo-pic-container img {
     width: 100%;
     height: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Main grid styling */
-.main-grid{
+.main-grid {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -177,34 +189,94 @@ footer {
 .weather-box,
 .news-box,
 .event-box,
-.join-box{
+.join-box {
     border: 1px black solid;
     min-height: 10em;
+
+    
 }
 
-.join-box{
+.weather-box,
+.news-box,
+.event-box,
+.join-box,
+.spotlight-box,
+.spotlight-1,
+.spotlight-2,
+.spotlight-3 {
+    border-radius: 1em;
+    padding: .5em;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.hero-box,
+.weather-box,
+.news-box,
+.event-box,
+.join-box,
+.spotlight-box,
+.spotlight-1,
+.spotlight-2,
+.spotlight-3{
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
+}
+
+.hero-box:hover,
+.weather-box:hover,
+.news-box:hover,
+.event-box:hover,
+.join-box:hover,
+.spotlight-box:hover,
+.spotlight-1:hover,
+.spotlight-2:hover,
+.spotlight-3:hover{
+    -webkit-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    -moz-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    transform: translate(0px, -4px);
+}
+
+
+.join-box {
     display: none;
 }
 
-.event-box{
+.event-box {
     grid-row: 2/3;
 }
 
-.weather-box{
+.weather-box {
     grid-row: 3/4;
 }
 
-.spotlight-box{
+.spotlight-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px black solid;
     min-height: 20em;
+    padding: 1em;
 }
 
 .spotlight-1,
-.spotlight-2{
+.spotlight-2 {
     margin: 0 auto;
     display: block;
     border: 1px black solid;
@@ -212,6 +284,128 @@ footer {
     min-height: 40%;
 }
 
-.spotlight-3{
-    display:none;
+.spotlight-3 {
+    display: none;
+}
+
+/* Hero Welcome Banner Styling */
+.hero-welcome-banner {
+
+    height: 100%;
+    position: relative;
+}
+
+.hero-welcome-h2 {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: gold;
+}
+
+.hero-welcome-btn {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    width: 15em;
+    max-width: 50%;
+    background-color: black;
+    color: gold;
+    border-radius: 12px;
+    padding: 14px 40px;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.hero-welcome-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.475), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero-welcome-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hero-welcome-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.hero-welcome-btn:hover span {
+    padding-right: 25px;
+}
+
+.hero-welcome-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Join Us box button styling */
+.join-box-btn {
+    margin: 10px;
+    width: 90%;
+    background-color: gold;
+    color: black;
+    border: 1px solid gold;
+    border-radius: 12px;
+    padding: 14px 40px;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+
+
+}
+
+.join-box-btn:hover {
+    color: gold;
+    background-color: black;
+}
+
+.join-box-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.join-box-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.join-box-btn:hover span {
+    padding-right: 25px;
+}
+
+.join-box-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Weather box styling */
+.weather-box div{
+    justify-content: center;
+}
+.weather-icon-temperature{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    margin: .5em;
+}
+
+.weather-icon-temperature h3{
+    align-self: center;
 }

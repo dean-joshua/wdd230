@@ -1,3 +1,13 @@
+/* Header font styling */
+.header-name-top-bot h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+.header-name-top-bot p{
+    font-size: 2em;
+}
+
 /* Main grid Styling-Medium */
 .main-grid{
     display: grid;
