@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
     <link rel="stylesheet" href="css/medium.css" media="(min-width: 580px)">
     <link rel="stylesheet" href="css/large.css" media="(min-width: 900px)">
 </head>
+
 <body>
-    
+
     <header>
         <div id="message" class="message show-message">An event message shows up here on tuesday and thursday.</div>
         <!-- Contains the logo, page name, and menu on top and date time on bottom -->
@@ -27,7 +29,7 @@
                 <div class="header-logo-name-flex">
                     <!-- Picture container for the company logo -->
                     <picture class="logo-pic-container">
-                        <img src="images/bcommerce-logo.png" alt="Bcommerce logo image" height="150" width="150">
+                        <img src="images/bcommerce-logo.webp" alt="Bcommerce logo image" height="150" width="150">
                     </picture>
                     <!-- Contains the top and bottom parts of the company name -->
                     <div class="header-name-top-bot">
@@ -59,15 +61,12 @@
         <div class="hero-box">
             <div class="hero-welcome-banner">
                 <h2 class="hero-welcome-h2">Welcome to The Bahamas</h2>
-                <img class="hero-img" src="images/Government-House-750x.webp" alt="big big image"
-                srcset="images/Government-House-3000x.webp 3000w,
+                <img class="hero-img" src="images/Government-House-750x.webp" alt="big big image" srcset="images/Government-House-3000x.webp 3000w,
                         images/Government-House-1500x.webp 1500w,
                         images/Government-House-1000x.webp 1000w,
                         images/Government-House-750x.webp 750w,
-                        images/Government-House-400x.webp 400w"
-                size="(max-width:47.5rem) 100vw,
-                       50vw"
-                        >
+                        images/Government-House-400x.webp 400w" sizes="(max-width:47.5rem) 100vw,
+                       50vw">
                 <button class="hero-welcome-btn"><span class="welcome-btn-span">Join Us</span></button>
             </div>
         </div>
@@ -79,36 +78,36 @@
         </div>
         <div class="spotlight-box">
             <div class="spotlight-1">
-                <h3>Spot 1</h3>
+                <h3>BMW Dealers</h3>
                 <picture>
-                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="images/bmw-dealer.webp" alt="bmw dealer image">
                 </picture>
-                <q>This is their quote</q>
+                <q>We have something for everyone</q>
                 <hr>
                 <p>thisemail@email.com</p>
                 <p>+999-999-9999</p>
             </div>
             <div class="spotlight-2">
-                <h3>Spot 2</h3>
+                <h3>Devon's Lumber</h3>
                 <picture>
-                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="images/lumber-dealer.webp" alt="lumber dealer image">
                 </picture>
-                <q>This is their quote</q>
+                <q>Need wood?</q>
                 <hr>
                 <p>thisemail@email.com</p>
                 <p>+999-999-9999</p>
             </div>
             <div class="spotlight-3">
-                <h3>Spot 3</h3>
+                <h3>Thompson's Computer and Electric</h3>
                 <picture>
-                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="images/computer-dealer.webp" alt="computer dealer image">
                 </picture>
-                <q>This is their quote</q>
+                <q>Convenience.Speed.Style.</q>
                 <hr>
                 <p>thisemail@email.com</p>
                 <p>+999-999-9999</p>
             </div>
-        </div> 
+        </div>
         <div class="event-box">
             <h2>A Very Important Event</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem facilis reiciendis tenetur
@@ -119,19 +118,22 @@
             <h2>Weather</h2>
             <div class="weather-icon-temperature">
                 <picture>
-                    <img src="https://picsum.photos/100/100" alt="">
+                    <img class="temp-icon" src="https://picsum.photos/100/100" alt="">
                 </picture>
-                <h3>33 °Celsius</h3>
+                <h3 class="temp">N/A</h3>
             </div>
-            <h4>Partly Cloudy</h4>
+            <h4 class="description">Partly Cloudy</h4>
+            <br>
             <hr>
+            <br>
             <div class="wind-speed">
-                <p>WindSpeed:    </p>
-                <span> 2.5km/h</span>
+                <p>WindSpeed: <span class="wind-speed-span"> 2.5km/h</span></p>
+                
             </div>
+            <br>
             <div class="wind-chill">
-                <p>WindChil:     </p>
-                <span>N/A</span>
+                <p>WindChill: <span class="wind-chill-span"></span></p>
+                
             </div>
         </div>
         <div class="join-box">
@@ -142,7 +144,7 @@
     <footer>
         <div class="foot-logo-name">
             <picture class="footer-logo-container">
-                <img src="images/bcommerce-logo.png" alt="Bcommerce logo image" height="150" width="150">
+                <img src="images/bcommerce-logo.webp" alt="Bcommerce logo image" height="150" width="150">
             </picture>
             <!-- Contains the top and bottom parts of the company name -->
             <div class="footer-name-top-bot">
@@ -150,6 +152,7 @@
                 <p>Coral Harbour</p>
                 <p>New Providence, Bahamas</p>
                 <br>
+            </div>
         </div>
         <div class="social-media-links">
             <a href="https://facebook.com">
@@ -186,5 +189,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
 </body>
+
 </html>
