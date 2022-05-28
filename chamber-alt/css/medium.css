@@ -21,6 +21,10 @@
     gap: 1rem;
 }
 
+.hero-welcome-h2{
+    font-size: 2rem;
+}
+
 .hero-box{
     grid-area: hero;
 }
