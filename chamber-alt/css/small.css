@@ -304,7 +304,7 @@ img {
     left: 5px;
     font-weight: bolder;
     font-size: 2rem;
-    color: gold;
+    color: black;
 }
 
 .hero-welcome-btn {
@@ -315,7 +315,7 @@ img {
     width: 15em;
     max-width: 50%;
     background-color: black;
-    color: gold;
+    color: #FFD414;
     border-radius: 12px;
     padding: 14px 40px;
     font-size: 1.5em;
