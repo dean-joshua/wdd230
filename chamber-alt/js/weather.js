@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
                     tempC.textContent = `${temp.toFixed(2)} °C`;
                     // windc.textContent = `${temp.toFixed(2)}`;
 
-                    if (fahrenheit >= 50 && windspeedMph > 3 ){
+                    if (fahrenheit <= 50 && windspeedMph > 3 ){
                         windc.textContent = `${windChill.toFixed(2)} °F`;
                     }
                     else{
