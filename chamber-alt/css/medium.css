@@ -58,3 +58,72 @@
     min-width: 40%;
     min-height: 90%;
 }
+
+/* Discovery Main Grid & Picture Styling */
+.discovery-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+               " heading heading"
+               " text1   image1"
+               " image2  text2"
+               " text3   image3"
+               " image4  text4"
+               " text5   image5";
+}
+
+.discovery-main-grid div:hover,
+.discovery-main-grid picture:hover{
+    -webkit-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    -moz-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    transform: translate(0px, -4px);
+
+}
+
+.discover-heading{
+    grid-area: heading;
+}
+
+.geography-box{
+    grid-area: text1;
+}
+
+.geography-pic{
+    grid-area: image1;
+}
+
+.history-box{
+    grid-area: text2;
+}
+
+.history-pic{
+    grid-area: image2;
+}
+
+.population-box{
+    grid-area: text3;
+}
+
+.population-pic{
+    grid-area: image3;
+}
+
+.culture-box{
+    grid-area: text4;
+}
+
+.culture-pic{
+    grid-area: image4;
+}
+
+.economics-box{
+    grid-area: text5;
+}
+
+.economics-pic{
+    grid-area: image5;
+}

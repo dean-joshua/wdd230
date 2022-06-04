@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD230-Chamber Project-Home</title>
+    <title>WDD230-Chamber Project-Discovery</title>
     <meta name="author" content="Joshua Dean">
     <meta name="description" content="Home page for the WDD230 Chamber Project.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header>
         <div id="message" class="message show-message">An event message shows up here on tuesday and thursday.</div>
         <!-- Contains the logo, page name, and menu on top and date time on bottom -->
@@ -28,7 +27,7 @@
                 <!-- Contains the logo and the company name next to each other -->
                 <div class="header-logo-name-flex">
                     <!-- Picture container for the company logo -->
-                    <a class="logo-pic-container" href="index.html">
+                    <a href="index.html" class="logo-pic-container">
                         <picture class="logo-pic-container">
                             <img src="images/bcommerce-logo.webp" alt="Bcommerce logo image" height="150" width="150">
                         </picture>
@@ -44,7 +43,7 @@
                     <nav>
                         <ul class="navigation">
                             <li><a class="ham" href="#">Menu</a></li>
-                            <li><a href="discovery.html">Discover</a></li>
+                            <li><a href="#">Discover</a></li>
                             <li><a href="#">Directory</a></li>
                             <li><a href="#">Join</a></li>
                             <li><a href="#">Contact</a></li>
@@ -59,89 +58,57 @@
         </div>
 
     </header>
-    <main class="main-grid">
-        <div class="hero-box">
-            <div class="hero-welcome-banner">
-                <h2 class="hero-welcome-h2">Welcome to The Bahamas</h2>
-                <img class="hero-img" src="images/Government-House-750x.webp" alt="big big image" srcset="images/Government-House-3000x.webp 3000w,
-                        images/Government-House-1500x.webp 1500w,
-                        images/Government-House-1000x.webp 1000w,
-                        images/Government-House-750x.webp 750w,
-                        images/Government-House-400x.webp 400w" sizes="(max-width:47.5rem) 100vw,
-                       50vw">
-                <button class="hero-welcome-btn"><span class="welcome-btn-span">Join Us</span></button>
-            </div>
+    <main class="discovery-main-grid">
+        <div class="discover-heading">
+            <h1>Discover The Bahamas</h1>
+            <p>Your last visit was: <span id="days-ago"></span> days ago</p>
         </div>
-        <div class="news-box">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis iusto, illum eligendi
-                dolorum recusandae aut corporis, laudantium doloribus deserunt quos molestias fugit assumenda? Eaque
-                totam sunt laboriosam molestiae quisquam minus.</p>
+        <div class="geography-box">
+            <h2>Geography</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur blanditiis provident nihil
+                quas eaque vel iusto ipsum recusandae labore. Quia animi nostrum rerum ipsa delectus et eos pariatur
+                facere?</p>
         </div>
-        <div class="spotlight-box">
-            <div class="spotlight-1">
-                <h3>BMW Dealers</h3>
-                <picture>
-                    <img src="images/bmw-dealer.webp" alt="bmw dealer image">
-                </picture>
-                <q>We have something for everyone</q>
-                <hr>
-                <p>thisemail@email.com</p>
-                <p>+999-999-9999</p>
-            </div>
-            <div class="spotlight-2">
-                <h3>Devon's Lumber</h3>
-                <picture>
-                    <img src="images/lumber-dealer.webp" alt="lumber dealer image">
-                </picture>
-                <q>Need wood?</q>
-                <hr>
-                <p>thisemail@email.com</p>
-                <p>+999-999-9999</p>
-            </div>
-            <div class="spotlight-3">
-                <h3>Thompson's Computer and Electric</h3>
-                <picture>
-                    <img src="images/computer-dealer.webp" alt="computer dealer image">
-                </picture>
-                <q>Convenience.Speed.Style.</q>
-                <hr>
-                <p>thisemail@email.com</p>
-                <p>+999-999-9999</p>
-            </div>
+        <picture class="geography-pic">
+            <img src="https://via.placeholder.com/300x400?text=placeholder" data-src="https://picsum.photos/300/400?random=0" alt="Bahamas map">
+        </picture>
+        <div class="history-box">
+            <h2>History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur blanditiis provident nihil
+                quas eaque vel iusto ipsum recusandae labore. Quia animi nostrum rerum ipsa delectus et eos pariatur
+                facere?</p>
         </div>
-        <div class="event-box">
-            <h2>A Very Important Event</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem facilis reiciendis tenetur
-                aspernatur, nisi molestias exercitationem! Cumque iure molestias optio, provident pariatur unde quasi
-                velit repudiandae exercitationem qui iste. <a href="#">...moreinfo</a></p>
+        <picture class="history-pic">
+            <img src="https://via.placeholder.com/300x400?text=placeholder" data-src="https://picsum.photos/300/400?random=1" alt="Bahamas map">
+        </picture>
+        <div class="population-box">
+            <h2>Population</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur blanditiis provident nihil
+                quas eaque vel iusto ipsum recusandae labore. Quia animi nostrum rerum ipsa delectus et eos pariatur
+                facere?</p>
         </div>
-        <div class="weather-box">
-            <h2>Weather</h2>
-            <div class="weather-icon-temperature">
-                <picture>
-                    <img class="temp-icon" src="images/weather-default.webp" alt="default weather image">
-                </picture>
-                <h3 class="temp">N/A</h3>
-            </div>
-            <h4 class="description">Partly Cloudy</h4>
-            <br>
-            <hr>
-            <br>
-            <div class="wind-speed">
-                <p>WindSpeed: <span class="wind-speed-span"> 2.5km/h</span></p>
+        <picture class="population-pic">
+            <img src="https://via.placeholder.com/300x400?text=placeholder" data-src="https://picsum.photos/300/400?random=2" alt="Bahamas map">
+        </picture>
+        <div class="culture-box">
+            <h2>Culture</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur blanditiis provident nihil
+                quas eaque vel iusto ipsum recusandae labore. Quia animi nostrum rerum ipsa delectus et eos pariatur
+                facere?</p>
+        </div>
+        <picture class="culture-pic">
+            <img src="https://via.placeholder.com/300x400?text=placeholder" data-src="https://picsum.photos/300/400?random=3" alt="Bahamas map">
+        </picture>
+        <div class="economics-box">
+            <h2>Economics</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consectetur blanditiis provident nihil
+                quas eaque vel iusto ipsum recusandae labore. Quia animi nostrum rerum ipsa delectus et eos pariatur
+                facere?</p>
+        </div>
+        <picture class="economics-pic">
+            <img src="https://via.placeholder.com/300x400?text=placeholder" data-src="https://picsum.photos/300/400?random=4" alt="Bahamas map">
+        </picture>
 
-            </div>
-            <br>
-            <div class="wind-chill">
-                <p>WindChill: <span class="wind-chill-span"></span></p>
-
-            </div>
-        </div>
-        <div class="join-box">
-            <button class="join-box-btn"><span class="join-btn-span">Join</span></button>
-            <p>Discover how to Join the Bahamas Chamber of Commerce</p>
-        </div>
     </main>
     <footer>
         <div class="foot-logo-name">
@@ -191,7 +158,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/weather.js"></script>
+
 </body>
 
 </html>

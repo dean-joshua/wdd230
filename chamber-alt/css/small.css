@@ -414,3 +414,63 @@ img {
 .weather-icon-temperature h3{
     align-self: center;
 }
+
+/* Discovery page Grid & Picture styling */
+.discovery-main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    background-image: url("../images/bahamas-map.webp");
+}
+
+.discovery-main-grid div{
+    border-radius: .5rem;
+    background-color: aquamarine;
+    padding: 1rem;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
+}
+
+.discovery-main-grid picture img[data-src]{
+    filter: blur(0.2em);
+}
+
+.discovery-main-grid picture img{
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+.discovery-main-grid picture{
+    margin: auto;
+    max-width: 18.75rem;
+    border: 1em outset gold;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
+}

@@ -35,10 +35,9 @@
         const secondsSinceLastVisit = Math.floor((now - lastVisitDate) / 1000); // number of milliseconds in a second
         const daysSinceLastVisit = Math.floor(secondsSinceLastVisit / 86400); //Number of seconds in a day
 
+        document.querySelector('#last-visit').textContent = lastVisitDate;
         document.querySelector('#seconds-ago').textContent = secondsSinceLastVisit;
         document.querySelector('#days-ago').textContent = daysSinceLastVisit;
-        console.log(secondsSinceLastVisit);
-        console.log(daysSinceLastVisit);
     </script>
 </body>
 </html>
