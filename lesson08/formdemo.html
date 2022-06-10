@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        form{
+            max-width: 320px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            padding: 1em;
+        }
+
+        form label,
+        form input{
+            display: block;
+            width: 100%;
+        }
+
+        form input{
+            margin-bottom: 1em;
+            padding: .75em;
+        }
+
+        label input{
+            display: inline;
+            width: auto;
+            margin: 0;
+        }
+
+        form label.required::after{
+            content: " *";
+            color: red;
+        }
+
+        input:invalid{
+            box-shadow: 0 0 2px 1px red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form Demo</h1>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <label for="firstname" class="required">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+
+            <label for="lastname" class="required">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <label for="major">Major:(Accounting or CS or WDD or SWE)</label>
+            <input type="text" name="major" id="major" pattern="Accounting|CS|WDD|SWE">
+
+            <label for="color">Favourite color: </label>
+            <input  list="color-list" name="color" id="color">
+
+            <datalist id="color-list">
+                <option value="Red"></option>
+                <option value="Green"></option>
+                <option value="Blue"></option>
+                <option value="Yellow"></option>
+                <option value="Orange"></option>
+            </datalist>
+
+            <label for=""><input type="radio" name="status" id="freshman"> Freshman</label>
+            <label for=""><input type="radio" name="status" id="sophmore"> Sophmore</label>
+            <label for=""><input type="radio" name="status" id="junior"> Junior</label>
+            <label for=""><input type="radio" name="status" id="senior"> Senior</label>
+
+            <label for="phone">Phone number ex.(555-555-5555):</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}">
+
+            <label for="example" class="required">Example:</label>
+            <input type="text" name="example" id="example" pattern="\w{5}" required>
+
+            <input type="submit" value="Sign-Up">
+
+
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
