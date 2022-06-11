@@ -193,7 +193,7 @@ img {
     border: 1px black solid;
     min-height: 10em;
 
-    
+
 }
 
 .weather-box,
@@ -218,7 +218,7 @@ img {
 .spotlight-box,
 .spotlight-1,
 .spotlight-2,
-.spotlight-3{
+.spotlight-3 {
     -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
 
     -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
@@ -242,7 +242,7 @@ img {
 .spotlight-box:hover,
 .spotlight-1:hover,
 .spotlight-2:hover,
-.spotlight-3:hover{
+.spotlight-3:hover {
     -webkit-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
 
     -moz-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
@@ -401,22 +401,23 @@ img {
 }
 
 /* Weather box styling */
-.weather-box div{
+.weather-box div {
     justify-content: center;
 }
-.weather-icon-temperature{
+
+.weather-icon-temperature {
     display: flex;
     flex-direction: row;
     gap: .5em;
     margin: .5em;
 }
 
-.weather-icon-temperature h3{
+.weather-icon-temperature h3 {
     align-self: center;
 }
 
 /* Discovery page Grid & Picture styling */
-.discovery-main-grid{
+.discovery-main-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -427,7 +428,7 @@ img {
     background-image: url("../images/bahamas-map.webp");
 }
 
-.discovery-main-grid div{
+.discovery-main-grid div {
     border-radius: .5rem;
     background-color: aquamarine;
     padding: 1rem;
@@ -446,17 +447,17 @@ img {
     transition: all ease-in-out 500ms;
 }
 
-.discovery-main-grid picture img[data-src]{
+.discovery-main-grid picture img[data-src] {
     filter: blur(0.2em);
 }
 
-.discovery-main-grid picture img{
+.discovery-main-grid picture img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
 
-.discovery-main-grid picture{
+.discovery-main-grid picture {
     margin: auto;
     max-width: 18.75rem;
     border: 1em outset gold;
@@ -473,4 +474,111 @@ img {
     -o-transition: all ease-in-out 500ms;
 
     transition: all ease-in-out 500ms;
+}
+
+/* Join Page & Form Stylings */
+form {
+    max-width: 40 0px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: .5em;
+    padding: 2em;
+}
+
+form label,
+form input {
+    display: block;
+    width: 100%;
+}
+
+form input {
+    margin-bottom: 1em;
+    padding: .75em;
+}
+
+label input {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
+form label.required::after {
+    content: " *";
+    color: red;
+}
+
+input:invalid {
+    box-shadow: 0 0 2px 1px red;
+}
+
+form fieldset {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.need-space {
+    margin-bottom: 1em;
+    ;
+}
+
+/* Flex box for the entire join page content */
+.join-page-flex {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the join buttons that appear on small page*/
+.join-small-page-buttons {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.button {
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.4s;
+    padding: 1em;
+}
+
+.button:hover {
+    text-decoration: underline;
+    color: gold;
+    background-color: black;
+}
+
+/* Styling for the flex box and member option divs */
+.member-options-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+}
+
+.member-options-flex div {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: .5em;
+    background-color: aquamarine;
+    padding: 1em;
+}
+
+.member-options-flex div:nth-child(2),
+.member-options-flex div:nth-child(3),
+.member-options-flex div:nth-child(4),
+.member-options-flex div:nth-child(5) {
+    display: none;
+}
+
+.member-options-flex div ul li{
+    margin: 0 auto;
+    list-style-type: none;
 }

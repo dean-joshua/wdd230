@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD230-Chamber Project-Join</title>
+    <meta name="author" content="Joshua Dean">
+    <meta name="description" content="Home page for the WDD230 Chamber Project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 580px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 900px)">
+</head>
+
+<body>
+    <header>
+        <div id="message" class="message show-message">An event message shows up here on tuesday and thursday.</div>
+        <!-- Contains the logo, page name, and menu on top and date time on bottom -->
+        <div class="full-header-flex">
+            <!-- Contains the logo, page name on the left and menu on the right-->
+            <div class="header-top-flex">
+                <!-- Contains the logo and the company name next to each other -->
+                <div class="header-logo-name-flex">
+                    <!-- Picture container for the company logo -->
+                    <a href="index.html" class="logo-pic-container">
+                        <picture class="logo-pic-container">
+                            <img src="images/bcommerce-logo.webp" alt="Bcommerce logo image" height="150" width="150">
+                        </picture>
+                    </a>
+                    <!-- Contains the top and bottom parts of the company name -->
+                    <div class="header-name-top-bot">
+                        <h1>Bahamas</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <!-- Navigation menu -->
+                <div class="nav-box">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a class="ham" href="#">Menu</a></li>
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Contains the date time -->
+            <div class="header-bottom">
+                <p class="header-date">The date goes here</p>
+            </div>
+        </div>
+
+    </header>
+    <main class="join-page-flex">
+        <!-- Member options -->
+        <div class="join-small-page-buttons">
+            <button class="button button1">Non-Profit</button>
+            <button class="button button2">Bronze</button>
+            <button class="button button3">Silver</button>
+            <button class="button button4">Gold</button>
+        </div>
+        <div class="member-options-flex">
+            <div class="Small-Page-Content">
+                <h2 id="content-title">Non-Profit</h2>
+                <p>Price: <span id="content-price">Free</span></p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Something</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Non-Profit</h2>
+                <p>Price: Free</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Something</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Bronze</h2>
+                <p>Price: $10/month</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>  
+            </div>
+            <div>
+                <h2>Silver</h2>
+                <p>Price: $30/month</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Gold</h2>
+                <p>Price: $50/month</p>
+                <p>Benefits: </p>
+                <ul>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Join Form -->
+        <form method="get" action="thankyou.html">
+            <!-- First name -->
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="firstname" class="required">First Name:</label>
+                <input type="text" name="firstname" id="firstname" autofocus required>
+                <!-- Last Name -->
+                <label for="lname" class="required">Last Name:</label>
+                <input type="text" name="lname" id="lname" required>
+                <!-- Position Title -->
+                <label for="postitle">Position Title:</label>
+                <input type="text" name="postitle" id="postitle" pattern="\w{7,}">
+                <!-- Email -->
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" placeholder="example@example.com" name="email" required>
+                <!-- Cell Phone -->
+                <label for="phone" class="required">Phone number ex.(555-555-5555):</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}"
+                    required>
+            </fieldset>
+            <fieldset>
+                <legend>Business Info: </legend>
+                <!-- Business Name -->
+                <label for="bname" class="required">Business Name:</label>
+                <input type="text" name="bname" id="bname" required>
+                <!-- Membership Level-->
+                <label for="membership" class="required">Membership Level:</label>
+                <label for=""><input type="radio" name="membership" id="nonprof">Non-Profit Organization</label>
+                <label for=""><input type="radio" name="membership" id="bronze">Bronze</label>
+                <label for=""><input type="radio" name="membership" id="silver">Silver</label>
+                <label for="" class="need-space"><input type="radio" name="membership" id="gold">Gold</label>
+                <!-- Business Description -->
+                <label for="">Business Description: <br><textarea name="busdesc" id="busdesc" cols="30"
+                        rows="10"></textarea></label>
+            </fieldset>
+            <!-- Hidden - Current Date & Time -->
+            <input type="hidden" id="timeNow" name="timeNow" value="">
+            <!-- Submit -->
+            <input type="submit" value="Join Now">
+
+        </form>
+
+    </main>
+    <footer>
+        <div class="foot-logo-name">
+            <picture class="footer-logo-container">
+                <img src="images/bcommerce-logo.webp" alt="Bcommerce logo image" height="150" width="150">
+            </picture>
+            <!-- Contains the top and bottom parts of the company name -->
+            <div class="footer-name-top-bot">
+                <h1>Bahamas Chamber of Commerce</h1>
+                <p>Coral Harbour</p>
+                <p>New Providence, Bahamas</p>
+                <br>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href="https://facebook.com">
+                <picture class="facebook-logo">
+                    <img src="images/fb-icon.png" alt="facebook icon">
+                </picture>
+            </a>
+            <a href="https://linkedin.com">
+                <picture class="linkedin-logo">
+                    <img src="images/linkedin-icon.png" alt="linkedin icon">
+                </picture>
+            </a>
+        </div>
+        <br>
+        <div class="contact-info-location">
+            <p>info@bcommerce.org</p>
+            <br>
+            <p>(242)808-9009</p>
+            <br>
+            <p>📍 Location Map</p>
+        </div>
+        <br>
+        <hr>
+        <div class="copy-mod">
+            <div class="copyright">
+                <p id="footer-copy-line">&copy; <span id="copyDate"></span> Bahamas Chamber</p>
+                <p> | </p>
+                <p>Joshua Dean</p>
+                <p> | </p>
+                <p>WDD 230 Project</p>
+                <p> | </p>
+            </div>
+            <p id="modifiedLine">Last modified: <span id="lastmod"></span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/join.js"></script>
+
+</body>
+
+</html>
