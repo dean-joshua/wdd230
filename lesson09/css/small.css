@@ -14,7 +14,7 @@ body {
 .cards{
     margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(18.75rem,1fr));
     gap: 1rem;
 }
 
@@ -34,5 +34,6 @@ body {
     text-align: center;
     padding: 1rem;
     gap: .5rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.49);
 }
 
