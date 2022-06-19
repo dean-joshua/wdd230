@@ -1,29 +1,34 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = './json/data.json';
 const cards = document.querySelector('.cards');
 
-function displayProphets(prophet) {
+function displayBusiness(business) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
-    let portrait = document.createElement('img');
-    let birthDate = document.createElement('p');
-    let birthPlace = document.createElement('p');
+    let logo = document.createElement('img');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let link = document.createElement('a');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    birthDate.textContent = `Date of Birth: ${prophet.birthdate}`
-    birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`
+    h2.textContent = `${business.name}`;
+    address.textContent = `Located on: ${business.address}`;
+    phone.textContent = `Contact: ${business.phone}`;
+    link.textContent = `Visit Site`;
+    link.setAttribute('href', business.weblink);
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order} Latter-Day Saint President`);
-    portrait.setAttribute('loading', 'lazy');
+    logo.setAttribute('src', business.logo);
+    logo.setAttribute('alt', `Logo for ${business.name}`);
+    logo.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
-    card.appendChild(birthDate);
-    card.appendChild(birthPlace);
-    card.appendChild(portrait);
+    card.appendChild(logo);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(link);
+    
     
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
@@ -35,6 +40,6 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         //console.table(jsonObject); // temporary checking for valid response and data parsing
-        const prophets = jsonObject['prophets'];
-        prophets.forEach(displayProphets);
+        const businesses = jsonObject['businesses'];
+        businesses.forEach(displayBusiness);
     });

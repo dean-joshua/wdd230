@@ -1,5 +1,9 @@
 let contentTitle = document.querySelector('#content-title');
 let contentPrice = document.querySelector('#content-price');
+let hiddenDate = new Date().toLocaleString();
+let hiddenValue = document.querySelector('.hiddenVal');
+hiddenValue.setAttribute('value', hiddenDate);
+
 
 document.querySelector('.button1').addEventListener("click",changeContentNonProf)
 document.querySelector('.button2').addEventListener("click",changeContentBronze)

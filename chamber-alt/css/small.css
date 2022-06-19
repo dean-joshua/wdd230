@@ -582,3 +582,79 @@ form fieldset {
     margin: 0 auto;
     list-style-type: none;
 }
+
+/* Styling for Directory page and its Cards */
+.directory-main-grid{
+    width: 100%;
+    background-image: url("../images/bahamas-map.webp");
+}
+
+.cards{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18.75rem,1fr));
+    gap: 1rem;
+}
+
+.cards section img{
+    margin: 0 auto;
+    width: 50%;
+    border: .5rem outset gold;
+}
+
+.cards section{
+    display: flex;
+    min-width: 18.75rem;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: .5em;
+    text-align: center;
+    padding: 1rem;
+    gap: .5rem;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
+}
+
+.cards section:hover{
+    -webkit-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    -moz-box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    box-shadow: -2px 19px 24px 0px rgba(0, 0, 0, 0.3);
+
+    transform: translate(0px, -4px);
+}
+
+.directory-heading{
+    text-align: center;
+    border-radius: .5rem;
+    background-color: black;
+    color: gold;
+    padding: 1rem;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
+}
