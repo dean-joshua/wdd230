@@ -1,5 +1,22 @@
 const requestURL = './json/data.json';
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('.cards-grid');
+const gridbutton = document.querySelector("#discovery-grid-btn");
+const listbutton = document.querySelector("#discovery-list-btn");
+const display = document.querySelector("#main-div");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("cards-grid");
+	display.classList.remove("cards-list");
+});
+
+listbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("cards-list");
+	display.classList.remove("cards-grid");
+});
 
 function displayBusiness(business) {
     // Create elements to add to the document
@@ -31,7 +48,7 @@ function displayBusiness(business) {
     
     
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.cards').appendChild(card);
+    document.querySelector('div.cards-grid').appendChild(card);
 }
 
 fetch(requestURL)
