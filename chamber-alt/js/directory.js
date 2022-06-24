@@ -38,6 +38,8 @@ function displayBusiness(business) {
     logo.setAttribute('src', business.logo);
     logo.setAttribute('alt', `Logo for ${business.name}`);
     logo.setAttribute('loading', 'lazy');
+    logo.setAttribute('width', '200')
+    logo.setAttribute('height', '200')
 
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);

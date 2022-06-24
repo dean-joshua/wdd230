@@ -4,7 +4,7 @@ const api = '4f3d1224dc503feb69acf2a78a01dc4f';
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const url = `https://api.openweathermap.org/data/2.5/weather?q=fairbanks,alaska,us&appid=${api}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=nassau,bs&appid=${api}=imperial`;
 
 fetch(url)
     .then((response) => response.json())
