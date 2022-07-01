@@ -1,3 +1,4 @@
+// Hamburger menu display
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
@@ -10,6 +11,7 @@ window.onresize = () => {
     if (window.innerWidth > 760) mainnav.classList.remove('responsive')
 };
 
+// Last modification display in footer
 document.querySelector("#lastmod").textContent = document.lastModified;
 date = new Date();
 document.querySelector("#copyDate").textContent = date.getFullYear();
@@ -19,8 +21,15 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", {
     dateStyle: "full"
 }).format(now);
-datefield.innerHTML = `<em>${fulldate}</em>`;
+datefield.textContent = fulldate;
 
+// Join us banner
+if(now.getDay() == 1 || now.getDay() == 5){
+    const message = document.querySelector('.message');
+    message.style.display = "block";
+}
+
+// Lazy loading images
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
@@ -53,6 +62,7 @@ if ('IntersectionObserver' in window) {
     });
 }
 
+// Last visit date display
 let lastVisitDate;
 const current = Date.now();
 

@@ -38,7 +38,7 @@ fetch(base)
         iconImg.src = iconUrl;
         windspeed.textContent = `${windSpeedKmh.toFixed(0)} km/h`;
         desc.textContent = `${description}`;
-        tempC.textContent = `${temp.toFixed(2)} °C`;
+        tempC.textContent = `${temp.toFixed(0)} °C`;
         // windc.textContent = `${temp.toFixed(2)}`;
 
         if (fahrenheit <= 50 && windspeedMph > 3) {

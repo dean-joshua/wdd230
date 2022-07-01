@@ -12,19 +12,19 @@ document.querySelector('.button4').addEventListener("click",changeContentGold)
 
 function changeContentNonProf(){
     contentTitle.textContent = "Non-Profit";
-    contentPrice.textContent = "Free";
+    contentPrice.textContent = "$100";
 }
 
 function changeContentBronze(){
     contentTitle.textContent = "Bronze";
-    contentPrice.textContent = "$10/month";
+    contentPrice.textContent = "$200";
 }
 function changeContentSilver(){
     contentTitle.textContent = "Silver";
-    contentPrice.textContent = "$30/month";
+    contentPrice.textContent = "$400";
 }
 function changeContentGold(){
     contentTitle.textContent = "Gold";
-    contentPrice.textContent = "$50/month";
+    contentPrice.textContent = "$1000";
 }
 

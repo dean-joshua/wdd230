@@ -4,7 +4,7 @@
             "address": "242 Soldier Road",
             "phone": "242-111-2222",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/red cross-logos_transparent.webp",
             "memberlevel": "Non-Profit"
         },
         {
@@ -12,7 +12,7 @@
             "address": "242 Wolf Road",
             "phone": "242-222-1111",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/salvation army-logos_transparent.webp",
             "memberlevel": "Non-Profit"
         },
         {
@@ -20,7 +20,7 @@
             "address": "242 West Ridge",
             "phone": "242-111-3333",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/devon's hardware-logos_transparent.webp",
             "memberlevel": "Bronze"
         },
         {
@@ -28,7 +28,7 @@
             "address": "242 Bay Street",
             "phone": "242-333-1111",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/Robin's Fish Fry-logos_transparent.webp",
             "memberlevel": "Bronze"
         },
         {
@@ -36,7 +36,7 @@
             "address": "242 Goodman's Bay",
             "phone": "242-222-3333",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/Super Value-logos_transparent.webp",
             "memberlevel": "Silver"
         },
         {
@@ -44,7 +44,7 @@
             "address": "242 Sandy Port",
             "phone": "242-333-2222",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/Fresh Market-logos_transparent.webp",
             "memberlevel": "Silver"
         },
         {
@@ -52,7 +52,7 @@
             "address": "242 West Bay Street",
             "phone": "242-444-3333",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/Island Luck-logos_transparent.webp",
             "memberlevel": "Gold"
         },
         {
@@ -60,7 +60,7 @@
             "address": "242 Paradise Island",
             "phone": "242-333-4444",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/Atlantis-logos_transparent.webp",
             "memberlevel": "Gold"
         },
         {
@@ -68,7 +68,7 @@
             "address": "242 Cable Beach",
             "phone": "242-555-6666",
             "weblink": "https://google.com",
-            "logo": "https://picsum.photos/200/300",
+            "logo": "./images/BahaMar-logos_transparent.webp",
             "memberlevel": "Gold"
         }
     ]

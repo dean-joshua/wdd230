@@ -91,6 +91,11 @@ footer {
 
 /* Header flexboxes */
 .message {
+    border: .2rem outset lightcoral;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
     display: none;
 }
 
@@ -480,9 +485,24 @@ img {
 form {
     max-width: 400px;
     margin: 0 auto;
+    background-color: aquamarine;
+    font-weight: bolder;
     border: 1px solid grey;
     border-radius: .5em;
     padding: 2em;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
 }
 
 form label,
@@ -494,6 +514,7 @@ form input {
 form input {
     margin-bottom: 1em;
     padding: .75em;
+    background-color: lightgoldenrodyellow;
 }
 
 label input {
@@ -522,6 +543,11 @@ form fieldset {
 }
 
 /* Flex box for the entire join page content */
+#join-page-body{
+    background-image: url("../images/bahamas-map.webp");
+
+}
+
 .join-page-flex {
     max-width: 400px;
     display: flex;
@@ -569,6 +595,19 @@ form fieldset {
     border-radius: .5em;
     background-color: aquamarine;
     padding: 1em;
+    -webkit-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    -moz-box-shadow: -2px 7px 40px 2px rgba(0, 0, 0, 0.49);
+
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.49);
+
+    -webkit-transition: all ease-in-out 500ms;
+
+    -moz-transition: all ease-in-out 500ms;
+
+    -o-transition: all ease-in-out 500ms;
+
+    transition: all ease-in-out 500ms;
 }
 
 .member-options-flex div:nth-child(2),
@@ -639,9 +678,9 @@ form fieldset {
 }
 
 #main-div img {
-    margin: 0 auto;
-
-    border: .5rem outset gold;
+    margin: 1rem;
+    background-color: orange;
+    border: .5rem outset lightcoral;
 }
 
 #main-div section {
