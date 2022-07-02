@@ -860,6 +860,11 @@ form fieldset {
     backface-visibility: hidden;
 }
 
+.flip-card-back a{
+    color: white;
+    background-color: black;
+}
+
 /* Style the front side */
 .flip-card-front {
     background-color: lightseagreen;
