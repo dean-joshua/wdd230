@@ -872,6 +872,6 @@ form fieldset {
     flex-direction: column;
     gap: .5rem;
     background-color: lightseagreen;
-    color: white;
+    color: black;
     transform: rotateY(180deg);
 }
