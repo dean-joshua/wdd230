@@ -824,7 +824,7 @@ form fieldset {
     flex-direction: column;
     gap: 1rem;
 }
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-card {
     margin: auto;
     background-color: transparent;
@@ -832,7 +832,6 @@ form fieldset {
     height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -861,7 +860,7 @@ form fieldset {
     backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style the front side */
 .flip-card-front {
     background-color: lightseagreen;
     color: black;
