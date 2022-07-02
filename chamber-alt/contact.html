@@ -19,7 +19,9 @@
 
 <body>
     <header>
-        <div id="message" class="message"><p>Join us for our meet and greet today at 3:00pm! We are excited to see you there!</p></div>
+        <div id="message" class="message">
+            <p>Join us for our meet and greet today at 3:00pm! We are excited to see you there!</p>
+        </div>
         <!-- Contains the logo, page name, and menu on top and date time on bottom -->
         <div class="full-header-flex">
             <!-- Contains the logo, page name on the left and menu on the right-->
@@ -44,7 +46,7 @@
                         <ul class="navigation">
                             <li><a class="ham" href="#">Menu</a></li>
                             <li><a href="discovery.html">Discover</a></li>
-                            <li><a href="#">Directory</a></li>
+                            <li><a href="directory.html">Directory</a></li>
                             <li><a href="join.html">Join</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -58,13 +60,133 @@
         </div>
 
     </header>
-    <main class="contact-main-grid">  
+    <main class="contact-main-grid">
         <section class="directory-heading">
-            <h2>Our Contact Info</h2>
+            <h2>Contact Us!</h2>
             <p>Your last visit was: <span id="days-ago"></span> days ago</p>
         </section>
 
-        
+        <!-- Flip Cards for the Board of directors -->
+        <h2>The Board of Directors</h2>
+        <div class="director-flex">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/amani-nation-vDxvAmuNDK8-unsplash.webp" alt="Avatar" width="200" height="300">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Latoya Sweeting</h1>
+                        <p>Owner & CEO - Latoya's Construction</p>
+                        <q>Life is about hardwork</q>
+                        <p>Photo by <a
+                                href="https://unsplash.com/@amani_nation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amani
+                                Nation</a> on <a
+                                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/fortune-vieyra-9sEcEcYHgQ0-unsplash.webp" alt="Avatar" width="200"
+                            height="300">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Justin Mason</h1>
+                        <p>Owner & CEO - A+ Engineering</p>
+                        <q>Life is about seizing opportunity</q>
+                        <p>Photo by <a
+                                href="https://unsplash.com/@fortunevieyra?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fortune
+                                Vieyra</a> on <a
+                                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/rui-silvestre-jCeVRUQslTs-unsplash.webp" alt="Avatar" width="200" height="300">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Aaron Cartwright</h1>
+                        <p>Owner & CEO - Bahamas Software Solutions</p>
+                        <q>Life is a puzzle waiting to be solved</q>
+                        <p>Photo by <a
+                                href="https://unsplash.com/@ruisilvestrecreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rui
+                                Silvestre</a> on <a
+                                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/junior-reis-w7LwKtHekKI-unsplash.webp" alt="Avatar" width="200" height="300">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Ariel Johnson</h1>
+                        <p>Owner & CEO - Quality Assurance Contractors</p>
+                        <q>Life is about mitigating risks</q>
+                        <p>Photo by <a
+                                href="https://unsplash.com/@juniorreisfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Junior
+                                REIS</a> on <a
+                                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info-form">
+            <div class="general-contact">
+                <h2>General Contact Info</h2>
+                <div class="contact-info-styles">
+                    <h4>Hours of Operation:</h4>
+                    <hr>
+                    <br>
+                    <p>Mon-Fri : 8:30am - 5:00pm</p>
+                    <p>Sat-Sun : 10:00am - 1:00pm</p>
+                    <br>
+                    <p>Phone Numbers:</p>
+                    <hr>
+                    <br>
+                    <p>General Questions: (242)808-9009</p>
+                    <p>Membership Questions: (242)808-9010</p>
+                    <p>Report a problem: (242)808-9018</p>
+                    <p>Email: info@bcommerce.org</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="form-contact">
+                <h2>Got Questions? Need Help? Try Our Form</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Leave Your Info Here</legend>
+                        <label for="firstname" class="required">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" autofocus required>
+                        <!-- Last Name -->
+                        <label for="lname" class="required">Last Name:</label>
+                        <input type="text" name="lname" id="lname" required>
+                        <!-- Email -->
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" id="email" placeholder="example@example.com" name="email" required>
+                        <!-- Cell Phone -->
+                        <label for="phone" class="required">Phone number ex.(555-555-5555):</label>
+                        <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}-\d{3}-\d{4}"
+                            required>
+                        <label>Leave A Comment: <br><textarea name="busdesc" id="busdesc" cols="30"
+                                rows="10"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+
 
     </main>
     <footer>
@@ -83,12 +205,12 @@
         <div class="social-media-links">
             <a href="https://facebook.com">
                 <picture class="facebook-logo">
-                    <img src="images/fb-icon.png" alt="facebook icon">
+                    <img src="images/fb-icon.png" alt="facebook icon" width="50" height="50">
                 </picture>
             </a>
             <a href="https://linkedin.com">
                 <picture class="linkedin-logo">
-                    <img src="images/linkedin-icon.png" alt="linkedin icon">
+                    <img src="images/linkedin-icon.png" alt="linkedin icon" width="50" height="50">
                 </picture>
             </a>
         </div>

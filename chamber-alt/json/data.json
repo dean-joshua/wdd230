@@ -3,6 +3,7 @@
             "name": "Nassau Red Cross",
             "address": "242 Soldier Road",
             "phone": "242-111-2222",
+            "email": "nassau@redcross.org",
             "weblink": "https://google.com",
             "logo": "./images/red cross-logos_transparent.webp",
             "memberlevel": "Non-Profit"
@@ -11,6 +12,7 @@
             "name": "Nassau Salvation Army",
             "address": "242 Wolf Road",
             "phone": "242-222-1111",
+            "email": "nassau@salvationarmy.org",
             "weblink": "https://google.com",
             "logo": "./images/salvation army-logos_transparent.webp",
             "memberlevel": "Non-Profit"
@@ -19,6 +21,7 @@
             "name": "Devon's Hardware",
             "address": "242 West Ridge",
             "phone": "242-111-3333",
+            "email": "hardware@devons.org",
             "weblink": "https://google.com",
             "logo": "./images/devon's hardware-logos_transparent.webp",
             "memberlevel": "Bronze"
@@ -27,6 +30,7 @@
             "name": "Robin's Fish Fry",
             "address": "242 Bay Street",
             "phone": "242-333-1111",
+            "email": "fishfry@robin.org",
             "weblink": "https://google.com",
             "logo": "./images/Robin's Fish Fry-logos_transparent.webp",
             "memberlevel": "Bronze"
@@ -35,6 +39,7 @@
             "name": "Super Value",
             "address": "242 Goodman's Bay",
             "phone": "242-222-3333",
+            "email": "supervalue@chain.org",
             "weblink": "https://google.com",
             "logo": "./images/Super Value-logos_transparent.webp",
             "memberlevel": "Silver"
@@ -43,6 +48,7 @@
             "name": "Fresh Market",
             "address": "242 Sandy Port",
             "phone": "242-333-2222",
+            "email": "fresh@market.org",
             "weblink": "https://google.com",
             "logo": "./images/Fresh Market-logos_transparent.webp",
             "memberlevel": "Silver"
@@ -51,6 +57,7 @@
             "name": "Island Luck",
             "address": "242 West Bay Street",
             "phone": "242-444-3333",
+            "email": "luck@island.org",
             "weblink": "https://google.com",
             "logo": "./images/Island Luck-logos_transparent.webp",
             "memberlevel": "Gold"
@@ -59,6 +66,7 @@
             "name": "Atlantis",
             "address": "242 Paradise Island",
             "phone": "242-333-4444",
+            "email": "atlantis@paradise.org",
             "weblink": "https://google.com",
             "logo": "./images/Atlantis-logos_transparent.webp",
             "memberlevel": "Gold"
@@ -67,6 +75,7 @@
             "name": "BahaMar",
             "address": "242 Cable Beach",
             "phone": "242-555-6666",
+            "email": "bahamar@hotel.org",
             "weblink": "https://google.com",
             "logo": "./images/BahaMar-logos_transparent.webp",
             "memberlevel": "Gold"

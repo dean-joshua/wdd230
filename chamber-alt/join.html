@@ -48,7 +48,7 @@
                             <li><a href="discovery.html">Discover</a></li>
                             <li><a href="directory.html">Directory</a></li>
                             <li><a href="#">Join</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -64,7 +64,8 @@
         <!-- Member options -->
         <section class="directory-heading">
             <h2>Join Our Chamber</h2>
-            <p>Check out the Benefits below!</p>
+            <p>Try clicking on an option to check out its benefits! </p> 
+            <p>Then fill out your form today!</p>
         </section>
         <div class="join-small-page-buttons">
             <button class="button button1">Non-Profit</button>
@@ -75,12 +76,13 @@
         <div class="member-options-flex">
             <div class="Small-Page-Content">
                 <h2 id="content-title">Non-Profit</h2>
+                <br>
                 <hr>
+                <br>
                 <p>Price: <span id="content-price">$100</span></p>
+                <br>
                 <p>Benefits: </p>
-                <ul>
-                    <li>Something</li>
-                </ul>
+                <p id="join-benefits">Spotlight on homepage, Event updates on homepage, Directory listing</p>
             </div>
         </div>
         <!-- Join Form -->
@@ -109,18 +111,19 @@
                 <!-- Business Name -->
                 <label for="bname" class="required">Business Name:</label>
                 <input type="text" name="bname" id="bname" required>
+                <br>
                 <!-- Membership Level-->
-                <label for="membership" class="required">Membership Level:</label>
-                <label for=""><input type="radio" name="membership" id="nonprof">Non-Profit Organization</label>
-                <label for=""><input type="radio" name="membership" id="bronze">Bronze</label>
-                <label for=""><input type="radio" name="membership" id="silver">Silver</label>
-                <label for="" class="need-space"><input type="radio" name="membership" id="gold">Gold</label>
+                <label class="required">Membership Level:</label>
+                <label><input type="radio" name="membership" value="Non-Profit">Non-Profit Organization</label>
+                <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="Silver">Silver</label>
+                <label class="need-space"><input type="radio" name="membership" value="Gold">Gold</label>
                 <!-- Business Description -->
-                <label for="">Business Description: <br><textarea name="busdesc" id="busdesc" cols="30"
+                <label>Business Description: <br><textarea name="busdesc" id="busdesc" cols="30"
                         rows="10"></textarea></label>
             </fieldset>
             <!-- Hidden - Current Date & Time -->
-            <input class="hiddenVal" type="hidden" id="timeNow" name="timeNow">
+            <label><input class="hiddenVal" type="hidden" id="timeNow" name="timeNow"></label>
             <!-- Submit -->
             <input type="submit" value="Join Now">
 
@@ -144,12 +147,12 @@
         <div class="social-media-links">
             <a href="https://facebook.com">
                 <picture class="facebook-logo">
-                    <img src="images/fb-icon.png" alt="facebook icon">
+                    <img src="images/fb-icon.png" alt="facebook icon" width="50" height="50">
                 </picture>
             </a>
             <a href="https://linkedin.com">
                 <picture class="linkedin-logo">
-                    <img src="images/linkedin-icon.png" alt="linkedin icon">
+                    <img src="images/linkedin-icon.png" alt="linkedin icon" width="50" height="50">
                 </picture>
             </a>
         </div>

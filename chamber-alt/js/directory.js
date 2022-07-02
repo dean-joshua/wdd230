@@ -7,15 +7,15 @@ const display = document.querySelector("#main-div");
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("cards-grid");
-	display.classList.remove("cards-list");
+    // example using arrow function
+    display.classList.add("cards-grid");
+    display.classList.remove("cards-list");
 });
 
 listbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("cards-list");
-	display.classList.remove("cards-grid");
+    // example using arrow function
+    display.classList.add("cards-list");
+    display.classList.remove("cards-grid");
 });
 
 function displayBusiness(business) {
@@ -47,8 +47,8 @@ function displayBusiness(business) {
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(link);
-    
-    
+
+
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards-grid').appendChild(card);
 }

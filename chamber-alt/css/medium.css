@@ -127,3 +127,9 @@
 .economics-pic{
     grid-area: image5;
 }
+
+/* Styling for contact page medium*/
+.director-flex{
+    display: flex;
+    flex-direction: row;
+}
