@@ -20,10 +20,14 @@
 </head>
 
 <body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        This is an alert box.
+    </div>
     <header>
         <!-- Header logo -->
         <div class="logo-div">
-            <img src="images/Temple Inn & Suites-logos_black.webp" alt="Temple Inn & Suites Logo" width="200"
+            <img src="images/Temple-Inn-&-Suites-logos_black.webp" alt="Temple Inn & Suites Logo" width="200"
                 height="200">
         </div>
         <!-- Header Navigation Bar Responsive -->
@@ -44,7 +48,61 @@
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
         </div>
     </header>
-    <main>
+
+
+
+    <main class="home-grid">
+        <!-- Hero image with call to action -->
+        <div class="hero-box">
+            <div class="hero-img">
+                <!-- <img src="https://picsum.photos/200/300" alt="Hero image"> -->
+                <div class="hero-txt">
+                    <h1>Temple Inn & Suites</h1>
+                    <p>Close <i class="fa-solid fa-circle-dot"></i> Convenient <i class="fa-solid fa-circle-dot"></i>
+                        Comfortable</p>
+                    <button onClick="location.href='reservation/'">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container for heading and carousel -->
+        <div class="carousel-div">
+            <h2>We will always be</h2>
+            <div class="slideshow-div">
+                <div class="mySlides fade">
+                    <img src="https://picsum.photos/600/300?random=1" alt="Hotel Close Image" width="600" height="300">
+                    <div class="slide-text">Close</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://picsum.photos/600/300?random=2" alt="Hotel Covenient Image" width="600" height="300">
+                    <div class="slide-text">Convenient</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://picsum.photos/600/300?random=3" alt="Hotel Comfortable Image" width="600" height="300">
+                    <div class="slide-text">Comfortable</div>
+                </div>
+            </div>
+            <div class="dot-div">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+        </div>
+
+        <div class="service-box">
+
+        </div>
+        <div class="temple-box">
+
+        </div>
+        <div class="weather-box">
+
+        </div>
+        <div class="reservation-box">
+
+        </div>
 
     </main>
     <footer>
@@ -57,7 +115,7 @@
         <!-- Footer logo and social box -->
         <div class="logo-social-container">
             <div class="foot-logo">
-                <img src="images/Temple Inn & Suites-logos_black.webp" alt="Temple Inn & Suites logo for footer"
+                <img src="images/Temple-Inn-&-Suites-logos_black.webp" alt="Temple Inn & Suites logo for footer"
                     width="150" height="150">
             </div>
             <div class="foot-social">
@@ -84,6 +142,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
 
 </body>
 
