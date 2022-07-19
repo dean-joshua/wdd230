@@ -109,7 +109,7 @@ function displayTemple(temple) {
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `../images/${temple.image}`);
-    logo.setAttribute('alt', `Logo for ${temple.name}`);
+    logo.setAttribute('alt', `photo of ${temple.name}`);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '300')
     logo.setAttribute('height', '200')
