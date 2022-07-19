@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 750px)">
     <link rel="stylesheet" href="css/large.css" media="(min-width: 900px)">
 </head>
 
 <body>
     <div class="alert">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        This is an alert box.
+        <p class="alert-text">This is an alert box</p>
     </div>
     <header>
         <!-- Header logo -->
@@ -74,11 +74,13 @@
                     <div class="slide-text">Close</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="https://picsum.photos/600/300?random=2" alt="Hotel Covenient Image" width="600" height="300">
+                    <img src="https://picsum.photos/600/300?random=2" alt="Hotel Covenient Image" width="600"
+                        height="300">
                     <div class="slide-text">Convenient</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="https://picsum.photos/600/300?random=3" alt="Hotel Comfortable Image" width="600" height="300">
+                    <img src="https://picsum.photos/600/300?random=3" alt="Hotel Comfortable Image" width="600"
+                        height="300">
                     <div class="slide-text">Comfortable</div>
                 </div>
             </div>
@@ -87,21 +89,111 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-
-
         </div>
 
-        <div class="service-box">
-
-        </div>
-        <div class="temple-box">
-
-        </div>
         <div class="weather-box">
-
+            <h2>Current</h2>
+            <div class="weather-current">
+                <div class="current-date-desc">
+                    <h2 id="current-weather-date">The date goes here</h2>
+                    <p class="current-temp-desc">Description goes here</p>
+                </div>
+                <div class="current-icon-temp-humid">
+                    <img class="current-temp-icon" src="images/weather-default.webp" alt="Default weather image"
+                        width="100" height="100">
+                    <div class="current-temp-humid">
+                        <h3 class="current-temp">the Current temp goes here °F</h3>
+                        <p class="current-temp-humidity">Humidity goes here</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2>Forecast</h2>
+            <div class="weather-forecast-container">
+                <div class="weather-forecast-1">
+                    <h3 class="day-1-date">Date</h3>
+                    <img class="day-1-weather" src="images/weather-default.webp" alt="" width="50" height="50">
+                    <h3 class="day-1-temp">temp</h3>
+                    <p class="day-1-desc">Desc</p>
+                </div>
+                <div class="weather-forecast-2">
+                    <h3 class="day-2-date">Date</h3>
+                    <img class="day-2-weather" src="images/weather-default.webp" alt="" width="50" height="50">
+                    <h3 class="day-2-temp">temp</h3>
+                    <p class="day-2-desc">Desc</p>
+                </div>
+                <div class="weather-forecast-3">
+                    <h3 class="day-3-date">Date</h3>
+                    <img class="day-3-weather" src="images/weather-default.webp" alt="" width="50" height="50">
+                    <h3 class="day-3-temp">temp</h3>
+                    <p class="day-3-desc">Desc</p>
+                </div>
+            </div>
         </div>
-        <div class="reservation-box">
 
+        <div class="close-container">
+            <div class="container-left">
+                <h2>Close</h2>
+                <p>Our locations are always within walking distance of the temple. Take a walk with your family or use
+                    our
+                    shuttles.</p>
+            </div>
+            <div class="container-right">
+                <picture><img src="https://picsum.photos/300/300?random=4" alt="" width="300" height="300"></picture>
+            </div>
+        </div>
+        <div class="convenient-container">
+            <div class="container-left">
+                <picture><img src="https://picsum.photos/300/300?random=5" alt="" width="300" height="300"></picture>
+            </div>
+            <div class="container-right">
+                <h2>Convenient</h2>
+                <p>We have a variety of <a href="services/">services</a> available to suit any of your individual,
+                    family, or large group needs.</p>
+            </div>
+            
+        </div>
+        <div class="comfortable-container">
+            <div class="container-left">
+                <h2>Comfortable</h2>
+                <p>Breakfast buffets, Exercise rooms, indoor pools, spacious rooms, and high speed internet connections.
+                    We
+                    offer a comfortable experience for all of our guests.</p>
+            </div>
+            <div class="container-right">
+                <picture><img src="https://picsum.photos/300/300?random=5" alt="" width="300" height="300"></picture>
+            </div>
+        </div>
+
+        <h2>Check Out Our Social Media Links</h2>
+
+        <div class="social-media-container">
+            <div class="facebook-soc">
+                <a href="https://facebook.com"><img src="images/facebook-transparent.webp" alt="Facebook logo"
+                        width="150" height="150"></a>
+            </div>
+            <div class="instagram-soc">
+                <a href="https://instagram.com"><img src="images/instagram-transparent.webp"
+                        alt="Instagram logo" width="150" height="150"></a>
+            </div>
+            <div class="twitter-soc">
+                <a href="https://twitter.com"><img src="images/twitter-transparent.webp" alt="Twitter logo"
+                        width="150" height="150"></a>
+            </div>
+        </div>
+
+        <h2>Quicklinks</h2>
+
+        <div class="utility-container">
+            <div class="reservation-box">
+                <img src="images/reservation-box-img.webp" alt="" width="200" height="200">
+            </div>
+            <div class="service-box">
+                <img src="images/service-box-img.webp" alt="" width="200" height="200">
+            </div>
+            <div class="temple-box">
+                <img src="images/temple-box-img.webp" alt="" width="200" height="200">
+            </div>
         </div>
 
     </main>
@@ -143,7 +235,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/slideshow.js"></script>
-
+    <script src="js/weather.js"></script>
 </body>
 
 </html>

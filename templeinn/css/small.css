@@ -224,6 +224,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
+    text-align: center;
 
 }
 
@@ -233,10 +234,95 @@ footer {
     position: relative;
 }
 
+.weather-box,
+.service-box,
+.temple-box,
+.reservation-box {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.weather-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid red;
+    background-color: lightpink;
+    padding: 1rem;
+}
+
+.weather-current {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.weather-forecast-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.current-icon-temp-humid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.convenient-container,
+.comfortable-container,
+.close-container {
+    width: 50rem;
+    min-width: 18.75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    border: 1px solid black;
+}
+
+.utility-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.container-left {
+    background-color: whitesmoke;
+    color: black;
+    font-size: xx-large;
+    padding: 1rem;
+}
+
+.container-right {
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    padding: 1rem;
+}
+
+.convenient-container a {
+    color: yellow;
+}
+
+.container-left img {
+    width: 100%;
+}
+
+.container-right img {
+    width: 100%;
+}
+
 /* The hero image */
 .hero-img {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/200/300");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fort_lauderdale_florida_temple_lighted.webp");
 
     /* Set a specific height */
     height: 25rem;
@@ -277,7 +363,7 @@ footer {
 
 /* Homepage Slideshow Styling */
 
-.carousel-div{
+.carousel-div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -315,7 +401,7 @@ footer {
 }
 
 /* The dots/bullets/indicators */
-.dot-div{
+.dot-div {
     text-align: center;
 }
 
@@ -347,4 +433,191 @@ footer {
     to {
         opacity: 1
     }
+}
+
+/* Temple page styling */
+#temple-main-div {
+    margin: 1rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1rem;
+}
+
+.cards-grid section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards-grid section img {
+    width: 18.75rem;
+    height: auto;
+    max-width: 50%;
+}
+
+.temple-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 5rem;
+}
+
+#temple-main-div img {
+    margin: 1rem;
+    border: .5rem outset whitesmoke;
+}
+
+#temple-main-div section {
+    min-width: 18.75rem;
+    margin: 0 auto;
+    background-color: black;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: .5em;
+    padding: 1rem;
+    gap: .5rem;
+    color: white;
+}
+
+#temple-main-div section p {
+    margin: .5rem;
+}
+
+#temple-main-div section button {
+    padding: .5rem;
+    background-color: skyblue;
+    font-weight: bolder;
+}
+
+/* Reservation Page styling */
+.reserve-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+form fieldset {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Reservation form formatting */
+input[type=text],
+select,
+textarea,
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=number] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: skyblue;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    justify-self: center;
+    max-width: 1000px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 10rem;
+}
+
+/* General Services Page Styling */
+.general-services-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    text-align: center;
+}
+
+.basic-amenities, .specialized-services, .long-term-acc, .reception-acc{
+    margin: 0 auto;
+    text-align: left;
+    background-color: whitesmoke;
+    padding: 5rem;
+    border-radius: .5rem;
+    font-weight:bolder;
+}
+
+.basic-amenities h3, .specialized-services h3, .long-term-acc h3, .reception-acc h3{
+    margin-bottom: 2rem;
+}
+
+.basic-amenities ul li, .specialized-services ul li, .long-term-acc ul li, .reception-acc ul li{
+    margin-bottom: .5rem;
+}
+
+.specialized-services{
+    margin-bottom: 10rem;
+}
+
+/* Missionary Service Page */
+.missionary-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    text-align: center;
+}
+
+.floor-plan-container, .social-media-container{
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.floor-plan-container h3, .social-media-container h3{
+    margin-bottom: 1rem;
+}
+
+/* Reception page styling */
+.reception-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    text-align: center;
 }

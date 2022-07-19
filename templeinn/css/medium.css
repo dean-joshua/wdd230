@@ -1,0 +1,29 @@
+.convenient-container,.comfortable-container,.close-container{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+
+.container-left img{
+    width: 100%;
+    min-width: 18.75rem;
+    height: auto;
+}
+
+.container-right img{
+    width: 100%;
+    min-width: 18.75rem;
+    height: auto;
+}
+
+.floor-plan-container, .social-media-container{
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+

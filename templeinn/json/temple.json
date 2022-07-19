@@ -1,0 +1,57 @@
+{
+    "temples": [{
+            "name": "Atlanta Georgia Temple",
+            "phone": "(1) 770-393-3698",
+            "address": "6450 Barfield Rd NE Sandy Springs GA",
+            "services": "No clothing rental available. No cafeteria available. Patron housing available. Distribution center nearby",
+            "history": "Dedicated: 1 June 1983",
+            "image": "atlanta_temple_lds.webp",
+            "closures": "Monday, 26 September 2022 - Monday, 10 October 2022"
+        },
+        {
+            "name": "Boise Idaho Temple",
+            "phone": "(1) 208-322-4422",
+            "address": "1211 S Cole Rd Boise ID",
+            "services": "No clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby.",
+            "history": "Dedicated: 25 May 1984",
+            "image": "boise_idaho_temple.webp",
+            "closures": "Monday, 10 October 2022 - Monday, 24 October 2022"
+        },
+        {
+            "name": "Dallas Texas Temple",
+            "phone": "(1) 972-991-1273",
+            "address": "6363 Willow Ln Dallas TX",
+            "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby.",
+            "history": "Dedicated: 19 October 1984",
+            "image": "dallas_texas_temple.webp",
+            "closures": "Saturday, 1 October 2022"
+        },
+        {
+            "name": "Chicago Illinois Temple",
+            "phone": "(1) 847-299-6500",
+            "address": "4151 W Lake Ave Glenview IL",
+            "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby.",
+            "history": "Dedicated: 9 August 1985",
+            "image": "chicago_illinois_temple.webp",
+            "closures": "Monday, 29 August 2022 - Monday, 12 September 2022"
+        },
+        {
+            "name": "Gilbert Arizona Temple",
+            "phone": "(1) 480-822-5000",
+            "address": "3301 S Greenfield Rd Gilbert AZ",
+            "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby.",
+            "history": "Dedicated: 2 March 2014",
+            "image": "gilbert_arizona_temple.webp",
+            "closures": "Monday, 3 October 2022 - Monday, 17 October 2022"
+        },
+        {
+            "name": "Los Angeles California Temple",
+            "phone": "(1) 310-474-5569",
+            "address": "10777 Santa Monica Blvd Los Angeles CA",
+            "services": "Clothing rental available. No cafeteria available. Patron housing available. Distribution center nearby.",
+            "history": "Dedicated: 11 March 1956",
+            "image": "los_angeles_temple.webp",
+            "closures": "Monday, 11 July 2022 - Monday, 1 August 2022"
+        }
+    ]
+}
